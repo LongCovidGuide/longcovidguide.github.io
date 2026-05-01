@@ -1,0 +1,13 @@
+[book]
+title = "Long COVID Guide"
+authors = ["znwang25"]
+language = "en"
+src = "src"
+
+[build]
+build-dir = "book"
+
+[output.html]
+site-url = "/long-covid-guide/"
+git-repository-url = "https://github.com/znwang25/long-covid-guide"
+edit-url-template = "https://github.com/znwang25/long-covid-guide/edit/main/{path}"
