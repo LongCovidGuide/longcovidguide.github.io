@@ -1,0 +1,478 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Long COVID Guide</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Understanding Long COVID</li><li class="chapter-item expanded "><a href="understanding/what-is-long-covid.html"><strong aria-hidden="true">1.</strong> What is Long COVID?</a></li><li class="chapter-item expanded "><a href="understanding/symptoms.html"><strong aria-hidden="true">2.</strong> Common Symptoms</a></li><li class="chapter-item expanded "><a href="understanding/who-is-affected.html"><strong aria-hidden="true">3.</strong> Who is Affected</a></li><li class="chapter-item expanded affix "><li class="part-title">Management & Treatment</li><li class="chapter-item expanded "><a href="management/pacing.html"><strong aria-hidden="true">4.</strong> Pacing and Energy Management</a></li><li class="chapter-item expanded "><a href="management/treatments.html"><strong aria-hidden="true">5.</strong> Medical Treatments</a></li><li class="chapter-item expanded "><a href="management/mental-health.html"><strong aria-hidden="true">6.</strong> Mental Health</a></li><li class="chapter-item expanded affix "><li class="part-title">Resources</li><li class="chapter-item expanded "><a href="resources/research.html"><strong aria-hidden="true">7.</strong> Research & Studies</a></li><li class="chapter-item expanded "><a href="resources/support.html"><strong aria-hidden="true">8.</strong> Support Groups</a></li><li class="chapter-item expanded "><a href="resources/links.html"><strong aria-hidden="true">9.</strong> Useful Links</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Long COVID Guide</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/znwang25/long-covid-guide" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<p>This guide is a resource for people living with Long COVID, their caregivers, and anyone who wants to learn more about the condition.</p>
+<p>Long COVID (also called Post-COVID Conditions or PASC) affects millions of people worldwide. This site aims to gather practical information, evidence-based resources, and community support in one place.</p>
+<h2 id="how-to-use-this-guide"><a class="header" href="#how-to-use-this-guide">How to Use This Guide</a></h2>
+<p>Use the sidebar to navigate between sections:</p>
+<ul>
+<li><strong>Understanding Long COVID</strong> — what it is, common symptoms, and who is affected</li>
+<li><strong>Management &amp; Treatment</strong> — practical strategies and medical options</li>
+<li><strong>Resources</strong> — research links, support groups, and useful tools</li>
+</ul>
+<h2 id="contributing"><a class="header" href="#contributing">Contributing</a></h2>
+<p>This is an open resource. If you'd like to contribute or suggest improvements, please visit the <a href="https://github.com/znwang25/long-covid-guide">GitHub repository</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-long-covid"><a class="header" href="#what-is-long-covid">What is Long COVID?</a></h1>
+<p>Long COVID refers to a wide range of health problems that persist for four or more weeks after an acute COVID-19 infection. It can affect people regardless of the severity of their initial illness — including those who had mild or asymptomatic cases.</p>
+<h2 id="key-characteristics"><a class="header" href="#key-characteristics">Key Characteristics</a></h2>
+<ul>
+<li>Symptoms last weeks, months, or longer after the initial infection</li>
+<li>Can affect multiple organ systems simultaneously</li>
+<li>Symptoms may relapse and remit or fluctuate over time</li>
+<li>Not explained by an alternative diagnosis</li>
+</ul>
+<h2 id="official-definitions"><a class="header" href="#official-definitions">Official Definitions</a></h2>
+<p>The WHO defines Post COVID-19 condition as occurring "usually 3 months from the onset of COVID-19, with symptoms that last for at least 2 months and cannot be explained by an alternative diagnosis."</p>
+<p>The CDC uses the term "Post-COVID Conditions" for the wide range of health consequences present four or more weeks after infection.</p>
+<h2 id="possible-mechanisms"><a class="header" href="#possible-mechanisms">Possible Mechanisms</a></h2>
+<p>Researchers are investigating several potential causes, including:</p>
+<ul>
+<li>Viral persistence or viral reservoirs</li>
+<li>Immune dysregulation and chronic inflammation</li>
+<li>Microbiome disruption</li>
+<li>Reactivation of latent viruses (e.g., EBV)</li>
+<li>Autoantibody formation</li>
+<li>Microclots and vascular damage</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="common-symptoms"><a class="header" href="#common-symptoms">Common Symptoms</a></h1>
+<p>Long COVID can present with over 200 reported symptoms. The most commonly reported include:</p>
+<h2 id="neurological--cognitive"><a class="header" href="#neurological--cognitive">Neurological &amp; Cognitive</a></h2>
+<ul>
+<li>Brain fog (difficulty thinking, concentrating, or remembering)</li>
+<li>Headaches</li>
+<li>Sleep disturbances</li>
+<li>Dizziness or lightheadedness</li>
+</ul>
+<h2 id="cardiovascular--autonomic"><a class="header" href="#cardiovascular--autonomic">Cardiovascular &amp; Autonomic</a></h2>
+<ul>
+<li>Heart palpitations or racing heart</li>
+<li>Postural Orthostatic Tachycardia Syndrome (POTS)</li>
+<li>Chest pain or tightness</li>
+</ul>
+<h2 id="respiratory"><a class="header" href="#respiratory">Respiratory</a></h2>
+<ul>
+<li>Shortness of breath or breathlessness</li>
+<li>Persistent cough</li>
+</ul>
+<h2 id="energy--fatigue"><a class="header" href="#energy--fatigue">Energy &amp; Fatigue</a></h2>
+<ul>
+<li>Extreme fatigue not relieved by rest</li>
+<li>Post-exertional malaise (PEM) — worsening of symptoms after physical or mental activity</li>
+</ul>
+<h2 id="other-common-symptoms"><a class="header" href="#other-common-symptoms">Other Common Symptoms</a></h2>
+<ul>
+<li>Joint or muscle pain</li>
+<li>Gastrointestinal issues</li>
+<li>Changes in taste or smell</li>
+<li>Anxiety and depression</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Post-exertional malaise (PEM) is a hallmark symptom that sets Long COVID apart from typical fatigue. Pushing through PEM can worsen the condition significantly.</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="who-is-affected"><a class="header" href="#who-is-affected">Who is Affected</a></h1>
+<p>Long COVID can affect anyone who has had COVID-19, regardless of age, prior health status, or severity of the acute illness.</p>
+<h2 id="prevalence"><a class="header" href="#prevalence">Prevalence</a></h2>
+<ul>
+<li>Estimates suggest 10–30% of people who contract COVID-19 develop some form of Long COVID</li>
+<li>Millions of people globally are affected</li>
+<li>People who were never hospitalized make up the majority of Long COVID cases</li>
+</ul>
+<h2 id="risk-factors"><a class="header" href="#risk-factors">Risk Factors</a></h2>
+<p>Research has identified several factors associated with higher risk:</p>
+<ul>
+<li>Female sex</li>
+<li>Older age</li>
+<li>Having had a more severe acute illness</li>
+<li>Pre-existing health conditions (e.g., asthma, diabetes)</li>
+<li>Not being vaccinated against COVID-19</li>
+</ul>
+<blockquote>
+<p>Vaccination has been shown to reduce (though not eliminate) the risk of developing Long COVID.</p>
+</blockquote>
+<h2 id="impact-on-daily-life"><a class="header" href="#impact-on-daily-life">Impact on Daily Life</a></h2>
+<p>Long COVID can range from mild inconvenience to complete disability. Many people:</p>
+<ul>
+<li>Are unable to work or have reduced work capacity</li>
+<li>Experience significant disruption to social and family life</li>
+<li>Face challenges getting an accurate diagnosis and appropriate care</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="pacing-and-energy-management"><a class="header" href="#pacing-and-energy-management">Pacing and Energy Management</a></h1>
+<p>Pacing is one of the most important self-management strategies for Long COVID, especially for those experiencing post-exertional malaise (PEM).</p>
+<h2 id="what-is-pacing"><a class="header" href="#what-is-pacing">What is Pacing?</a></h2>
+<p>Pacing means staying within your available energy limits to avoid triggering PEM. The goal is to find a sustainable activity level that doesn't cause crashes.</p>
+<h2 id="the-energy-envelope"><a class="header" href="#the-energy-envelope">The Energy Envelope</a></h2>
+<p>Think of your daily energy as a fixed "envelope." Activities — physical, cognitive, and emotional — all draw from this envelope. Pacing means:</p>
+<ul>
+<li>Staying within the envelope, not pushing to its edges</li>
+<li>Resting before you feel exhausted, not after</li>
+<li>Spreading activities throughout the day</li>
+</ul>
+<h2 id="heart-rate-monitoring"><a class="header" href="#heart-rate-monitoring">Heart Rate Monitoring</a></h2>
+<p>Many people use heart rate (HR) as a pacing guide. Staying below your anaerobic threshold can help prevent PEM. A commonly used estimate:</p>
+<pre><code>Maximum HR for pacing = (220 - age) × 0.6
+</code></pre>
+<p>Wearables (Garmin, Apple Watch, Fitbit) can help track this in real time.</p>
+<h2 id="practical-tips"><a class="header" href="#practical-tips">Practical Tips</a></h2>
+<ul>
+<li><strong>Break tasks into smaller chunks</strong> with rest breaks between them</li>
+<li><strong>Prioritize</strong> — identify what truly needs to be done vs. what can wait</li>
+<li><strong>Cognitive rest</strong> counts too — reduce screen time, noise, and multitasking</li>
+<li><strong>Keep an activity/symptom diary</strong> to find your personal patterns</li>
+<li><strong>Avoid the boom-bust cycle</strong> — good days are not a sign to overdo it</li>
+</ul>
+<h2 id="the-three-ps"><a class="header" href="#the-three-ps">The Three P's</a></h2>
+<p>A useful framework from occupational therapy:</p>
+<ul>
+<li><strong>Prioritize</strong> what matters most</li>
+<li><strong>Plan</strong> activities in advance to avoid last-minute rushing</li>
+<li><strong>Pace</strong> yourself throughout each activity</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="medical-treatments"><a class="header" href="#medical-treatments">Medical Treatments</a></h1>
+<p>There is currently no universally approved treatment for Long COVID. Management is largely symptom-focused. Work with your healthcare provider to build a plan suited to your specific symptoms.</p>
+<h2 id="currently-investigated-treatments"><a class="header" href="#currently-investigated-treatments">Currently Investigated Treatments</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Symptom Area</th><th>Approaches Being Studied</th></tr></thead><tbody>
+<tr><td>Fatigue / PEM</td><td>Low-dose naltrexone (LDN), pacing protocols</td></tr>
+<tr><td>Dysautonomia / POTS</td><td>Beta-blockers, increased salt/fluid intake, compression garments</td></tr>
+<tr><td>Brain fog</td><td>Cognitive rehabilitation, antihistamines</td></tr>
+<tr><td>Sleep</td><td>Sleep hygiene, melatonin, CBT-I</td></tr>
+<tr><td>Pain</td><td>Anti-inflammatories, physical therapy</td></tr>
+<tr><td>Depression/Anxiety</td><td>SSRIs, therapy</td></tr>
+</tbody></table>
+</div>
+<blockquote>
+<p><strong>Important:</strong> Graded Exercise Therapy (GET) has been shown to worsen outcomes in people with PEM. Discuss any exercise plan carefully with your doctor.</p>
+</blockquote>
+<h2 id="specialist-referrals"><a class="header" href="#specialist-referrals">Specialist Referrals</a></h2>
+<p>You may benefit from referrals to:</p>
+<ul>
+<li>Cardiologist (for POTS, chest symptoms)</li>
+<li>Neurologist (for brain fog, neuropathy, headaches)</li>
+<li>Pulmonologist (for breathing symptoms)</li>
+<li>Rheumatologist (for immune/inflammatory issues)</li>
+<li>Psychiatrist or psychologist (for mental health support)</li>
+</ul>
+<h2 id="clinical-trials"><a class="header" href="#clinical-trials">Clinical Trials</a></h2>
+<p>Active trials are listed at <a href="https://clinicaltrials.gov">ClinicalTrials.gov</a> — search "Long COVID" or "PASC" for currently enrolling studies.</p>
+<h2 id="documenting-your-symptoms"><a class="header" href="#documenting-your-symptoms">Documenting Your Symptoms</a></h2>
+<p>Keep records to bring to appointments:</p>
+<ul>
+<li>A symptom diary with dates, severity, and triggers</li>
+<li>List of all medications and supplements</li>
+<li>Records of previous test results</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mental-health"><a class="header" href="#mental-health">Mental Health</a></h1>
+<p>Living with a chronic, often misunderstood illness takes a significant mental and emotional toll. Addressing mental health is an important part of Long COVID management.</p>
+<h2 id="common-mental-health-challenges"><a class="header" href="#common-mental-health-challenges">Common Mental Health Challenges</a></h2>
+<ul>
+<li><strong>Depression</strong> — from illness burden, loss of function, and uncertainty</li>
+<li><strong>Anxiety</strong> — about symptoms, recovery, and the future</li>
+<li><strong>Grief</strong> — for your pre-illness self and lost activities</li>
+<li><strong>Medical gaslighting</strong> — being dismissed or disbelieved by healthcare providers</li>
+<li><strong>Isolation</strong> — from reduced capacity to socialize</li>
+</ul>
+<h2 id="seeking-support"><a class="header" href="#seeking-support">Seeking Support</a></h2>
+<ul>
+<li>Talk to your GP or primary care provider about mental health symptoms</li>
+<li>Ask for a referral to a therapist or psychologist experienced with chronic illness</li>
+<li>Peer support groups (online or local) can provide understanding and practical advice</li>
+</ul>
+<h2 id="self-care-strategies"><a class="header" href="#self-care-strategies">Self-Care Strategies</a></h2>
+<ul>
+<li><strong>Validate your experience</strong> — Long COVID is real, even when tests are normal</li>
+<li><strong>Set boundaries</strong> — it's okay to decline activities that will cause a crash</li>
+<li><strong>Connect with others</strong> — Long COVID communities online can reduce isolation</li>
+<li><strong>Celebrate small wins</strong> — recovery is often non-linear</li>
+</ul>
+<h2 id="note-on-cbt-and-therapy"><a class="header" href="#note-on-cbt-and-therapy">Note on CBT and Therapy</a></h2>
+<p>Cognitive Behavioral Therapy (CBT) can help with coping strategies for chronic illness. However, CBT approaches that challenge illness beliefs or push activity levels may not be appropriate for Long COVID. Look for therapists familiar with chronic fatigue conditions.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="research--studies"><a class="header" href="#research--studies">Research &amp; Studies</a></h1>
+<p>A selection of key research and ongoing studies on Long COVID.</p>
+<h2 id="landmark-studies"><a class="header" href="#landmark-studies">Landmark Studies</a></h2>
+<ul>
+<li><strong>RECOVER Initiative (NIH)</strong> — large US-based observational and clinical trial program for Long COVID</li>
+<li><strong>UK Biobank Long COVID studies</strong> — population-level data on prevalence and risk factors</li>
+<li><strong>Ziyad Al-Aly studies (VA/NEJM)</strong> — comprehensive analyses of Long COVID outcomes</li>
+</ul>
+<h2 id="key-findings"><a class="header" href="#key-findings">Key Findings</a></h2>
+<ul>
+<li>Long COVID affects multiple organ systems and can occur after mild infection</li>
+<li>Vaccination reduces but does not eliminate Long COVID risk</li>
+<li>Distinct biological abnormalities have been found in Long COVID patients (microclots, T-cell dysregulation, viral persistence)</li>
+<li>ME/CFS and Long COVID share significant biological overlap</li>
+</ul>
+<h2 id="preprint-servers--journals"><a class="header" href="#preprint-servers--journals">Preprint Servers &amp; Journals</a></h2>
+<ul>
+<li><a href="https://www.medrxiv.org">medRxiv</a> — preprints (not yet peer-reviewed)</li>
+<li><a href="https://www.thelancet.com">The Lancet</a></li>
+<li><a href="https://www.nature.com/nm/">Nature Medicine</a></li>
+<li><a href="https://www.nejm.org">NEJM</a></li>
+</ul>
+<h2 id="ongoing-trials"><a class="header" href="#ongoing-trials">Ongoing Trials</a></h2>
+<p>Search <a href="https://clinicaltrials.gov/search?cond=Long+COVID">ClinicalTrials.gov</a> for actively enrolling Long COVID studies.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="support-groups"><a class="header" href="#support-groups">Support Groups</a></h1>
+<p>You are not alone. There are many communities of Long COVID patients, advocates, and researchers working together.</p>
+<h2 id="online-communities"><a class="header" href="#online-communities">Online Communities</a></h2>
+<ul>
+<li><strong>Long COVID Support</strong> — large Facebook group for patients and caregivers</li>
+<li><strong>Body Politic</strong> — patient-led COVID-19 support group and research collective</li>
+<li><strong>Long COVID Alliance</strong> — coalition of patient and research organizations</li>
+<li><strong>ME/CFS &amp; Long COVID subreddit</strong> — r/covidlonghaulers on Reddit</li>
+</ul>
+<h2 id="patient-organizations"><a class="header" href="#patient-organizations">Patient Organizations</a></h2>
+<ul>
+<li><strong>Patient-Led Research Collaborative</strong> — patient-researchers studying Long COVID</li>
+<li><strong>Long COVID Alliance</strong> — US-based advocacy and research coalition</li>
+<li><strong>Long Covid SOS</strong> (UK) — advocacy group raising awareness</li>
+</ul>
+<h2 id="finding-local-support"><a class="header" href="#finding-local-support">Finding Local Support</a></h2>
+<ul>
+<li>Ask your doctor if there is a local Long COVID clinic or support group</li>
+<li>Check with local hospitals — many have established dedicated Long COVID services</li>
+<li>Local ME/CFS groups often welcome Long COVID patients, given symptom overlap</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="useful-links"><a class="header" href="#useful-links">Useful Links</a></h1>
+<p>A curated list of external resources.</p>
+<h2 id="official-health-organizations"><a class="header" href="#official-health-organizations">Official Health Organizations</a></h2>
+<ul>
+<li><a href="https://www.cdc.gov/covid/long-term-effects/">CDC — Post-COVID Conditions</a></li>
+<li><a href="https://www.who.int/europe/news-room/fact-sheets/item/post-covid-19-condition">WHO — Post COVID-19 condition</a></li>
+<li><a href="https://recovercovid.org">NIH RECOVER Initiative</a></li>
+</ul>
+<h2 id="patient-resources"><a class="header" href="#patient-resources">Patient Resources</a></h2>
+<ul>
+<li><a href="https://patientresearchcovid19.com">Patient-Led Research Collaborative</a></li>
+<li><a href="https://longcovidalliance.org">Long COVID Alliance</a></li>
+<li><a href="https://www.dysautonomiainternational.org">Dysautonomia International — POTS resources</a></li>
+</ul>
+<h2 id="tools--apps"><a class="header" href="#tools--apps">Tools &amp; Apps</a></h2>
+<ul>
+<li><a href="https://www.makevisible.com">Visible App</a> — pacing and heart rate monitoring for PEM</li>
+<li><a href="https://bearable.app">Bearable</a> — symptom and health tracking app</li>
+<li><a href="https://clinicaltrials.gov/search?cond=Long+COVID">ClinicalTrials.gov</a> — find active trials</li>
+</ul>
+<h2 id="further-reading"><a class="header" href="#further-reading">Further Reading</a></h2>
+<ul>
+<li><a href="https://www.nature.com/articles/s41579-022-00846-2">Long COVID: major findings, mechanisms and recommendations (Nature Reviews, 2023)</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
