@@ -1,41 +1,39 @@
-# Pacing and Energy Management
+# 节奏调整与能量管理
 
-Pacing is one of the most important self-management strategies for Long COVID, especially for those experiencing post-exertional malaise (PEM).
+对于长新冠（Long COVID）患者，尤其是那些经历过**劳累后不适 (PEM)** 的人来说，“节奏调整”（Pacing）是最重要的自我管理策略之一。
 
-## What is Pacing?
+## 什么是节奏调整？
 
-Pacing means staying within your available energy limits to avoid triggering PEM. The goal is to find a sustainable activity level that doesn't cause crashes.
+节奏调整意味着将活动量控制在现有的能量限制范围内，以避免触发 PEM。其目标是找到一种可持续的活动水平，而不会导致病情“崩溃”（Crashes）。
 
-## The Energy Envelope
+## 能量信封 (The Energy Envelope)
 
-Think of your daily energy as a fixed "envelope." Activities — physical, cognitive, and emotional — all draw from this envelope. Pacing means:
+可以将你每天的能量想象成一个固定的“信封”。体力、认知和情感活动都会消耗这个信封里的能量。节奏调整意味着：
 
-- Staying within the envelope, not pushing to its edges
-- Resting before you feel exhausted, not after
-- Spreading activities throughout the day
+- 保持在信封范围内，而不是挑战其边缘
+- 在感到精疲力竭**之前**休息，而不是在之后
+- 将活动分散到一整天中
 
-## Heart Rate Monitoring
+## 心率监测
 
-Many people use heart rate (HR) as a pacing guide. Staying below your anaerobic threshold can help prevent PEM. A commonly used estimate:
+许多人使用心率 (HR) 作为节奏调整的指南。保持在无氧阈值以下有助于预防 PEM。一个常用的估算公式为：
 
-```
-Maximum HR for pacing = (220 - age) × 0.6
-```
+$$节奏调整的最大心率 = (220 - 年龄) \times 0.6$$
 
-Wearables (Garmin, Apple Watch, Fitbit) can help track this in real time.
+可穿戴设备（如 Garmin、Apple Watch、Fitbit）可以帮助实时追踪心率。
 
-## Practical Tips
+## 实用建议
 
-- **Break tasks into smaller chunks** with rest breaks between them
-- **Prioritize** — identify what truly needs to be done vs. what can wait
-- **Cognitive rest** counts too — reduce screen time, noise, and multitasking
-- **Keep an activity/symptom diary** to find your personal patterns
-- **Avoid the boom-bust cycle** — good days are not a sign to overdo it
+- **将任务分解为小块**，并在期间安排休息
+- **确定优先级** —— 识别哪些是真正需要做的，哪些可以稍后再说
+- **认知休息**同样重要 —— 减少屏幕时间、噪音和多任务处理
+- **记录活动/症状日记** —— 寻找个人的发病模式
+- **避免“繁荣-崩溃”循环** —— 身体感觉较好的日子并不意味着可以过度活动
 
-## The Three P's
+## 3P 原则
 
-A useful framework from occupational therapy:
+来自职业疗法（Occupational Therapy）的一个有用框架：
 
-- **Prioritize** what matters most
-- **Plan** activities in advance to avoid last-minute rushing
-- **Pace** yourself throughout each activity
+- **优先化 (Prioritize)**：专注于最重要的事情
+- **计划 (Plan)**：提前规划活动，避免最后一刻的仓促
+- **节奏 (Pace)**：在每项活动中保持平稳的节奏

@@ -1,22 +1,22 @@
-# Support Groups
+# 支持团体
 
-You are not alone. There are many communities of Long COVID patients, advocates, and researchers working together.
+你并不孤单。目前有许多由长新冠（Long COVID）患者、倡导者和研究人员组成的社区正在共同努力。
 
-## Online Communities
+## 在线社区
 
-- **Long COVID Support** — large Facebook group for patients and caregivers
-- **Body Politic** — patient-led COVID-19 support group and research collective
-- **Long COVID Alliance** — coalition of patient and research organizations
-- **ME/CFS & Long COVID subreddit** — r/covidlonghaulers on Reddit
+- **Long COVID Support** —— 针对患者和护理人员的大型 Facebook 社群。
+- **Body Politic** —— 患者主导的新冠肺炎支持团体和研究协作体。
+- **Long COVID Alliance** —— 由患者组织和研究机构组成的联盟。
+- **ME/CFS 与长新冠 Reddit 讨论版** —— Reddit 上的 r/covidlonghaulers 板块。
 
-## Patient Organizations
+## 患者组织
 
-- **Patient-Led Research Collaborative** — patient-researchers studying Long COVID
-- **Long COVID Alliance** — US-based advocacy and research coalition
-- **Long Covid SOS** (UK) — advocacy group raising awareness
+- **患者主导的研究协作组织 (Patient-Led Research Collaborative)** —— 由研究长新冠的患者研究员组成。
+- **长新冠联盟 (Long COVID Alliance)** —— 总部位于美国的倡导与研究联盟。
+- **Long Covid SOS (英国)** —— 致力于提高公众认知的倡导团体。
 
-## Finding Local Support
+## 寻找当地支持
 
-- Ask your doctor if there is a local Long COVID clinic or support group
-- Check with local hospitals — many have established dedicated Long COVID services
-- Local ME/CFS groups often welcome Long COVID patients, given symptom overlap
+- 咨询您的医生，了解当地是否有长新冠门诊或支持小组。
+- 咨询当地医院 —— 许多医院已经建立了专门的长新冠服务部门。
+- 鉴于症状的重叠，当地的 ME/CFS（慢性疲劳综合征）团体通常也欢迎长新冠患者加入。

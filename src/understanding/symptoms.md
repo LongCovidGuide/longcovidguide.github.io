@@ -1,35 +1,35 @@
-# Common Symptoms
+# 常见症状
 
-Long COVID can present with over 200 reported symptoms. The most commonly reported include:
+据报告，长新冠（Long COVID）可能表现出超过 200 种症状。其中最常见的包括：
 
-## Neurological & Cognitive
+## 神经系统与认知
 
-- Brain fog (difficulty thinking, concentrating, or remembering)
-- Headaches
-- Sleep disturbances
-- Dizziness or lightheadedness
+- **脑雾**（思维、集中注意力或记忆困难）
+- 头痛
+- 睡眠障碍
+- 头晕或眩晕
 
-## Cardiovascular & Autonomic
+## 心血管与自主神经
 
-- Heart palpitations or racing heart
-- Postural Orthostatic Tachycardia Syndrome (POTS)
-- Chest pain or tightness
+- 心悸或心跳加速
+- **体位性心动过速综合征 (POTS)**
+- 胸痛或胸闷
 
-## Respiratory
+## 呼吸系统
 
-- Shortness of breath or breathlessness
-- Persistent cough
+- 气短或呼吸困难
+- 持续性咳嗽
 
-## Energy & Fatigue
+## 能量与疲劳
 
-- Extreme fatigue not relieved by rest
-- Post-exertional malaise (PEM) — worsening of symptoms after physical or mental activity
+- 休息无法缓解的重度疲劳
+- **劳累后不适 (PEM)** —— 在进行体力或脑力活动后症状加重
 
-## Other Common Symptoms
+## 其他常见症状
 
-- Joint or muscle pain
-- Gastrointestinal issues
-- Changes in taste or smell
-- Anxiety and depression
+- 关节或肌肉疼痛
+- 胃肠道问题
+- 味觉或嗅觉改变
+- 焦虑和抑郁
 
-> **Note:** Post-exertional malaise (PEM) is a hallmark symptom that sets Long COVID apart from typical fatigue. Pushing through PEM can worsen the condition significantly.
+> **注意：** 劳累后不适 (Post-exertional malaise (PEM)) 是长新冠区别于普通疲劳的标志性症状。在 PEM 期间强行硬撑可能会显著恶化病情。

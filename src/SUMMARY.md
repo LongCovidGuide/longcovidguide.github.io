@@ -1,21 +1,21 @@
-# Summary
+# 目录
 
-[Introduction](./introduction.md)
+[引言](./introduction.md)
 
-# Understanding Long COVID
+# 了解长新冠
 
-- [What is Long COVID?](./understanding/what-is-long-covid.md)
-- [Common Symptoms](./understanding/symptoms.md)
-- [Who is Affected](./understanding/who-is-affected.md)
+- [什么是长新冠？](./understanding/what-is-long-covid.md)
+- [常见症状](./understanding/symptoms.md)
+- [受影响人群](./understanding/who-is-affected.md)
 
-# Management & Treatment
+# 管理与治疗
 
-- [Pacing and Energy Management](./management/pacing.md)
-- [Medical Treatments](./management/treatments.md)
-- [Mental Health](./management/mental-health.md)
+- [节奏调整与能量管理](./management/pacing.md)
+- [医疗方案](./management/treatments.md)
+- [心理健康](./management/mental-health.md)
 
-# Resources
+# 资源
 
-- [Research & Studies](./resources/research.md)
-- [Support Groups](./resources/support.md)
-- [Useful Links](./resources/links.md)
+- [科研与研究](./resources/research.md)
+- [支持团体](./resources/support.md)
+- [常用链接](./resources/links.md)

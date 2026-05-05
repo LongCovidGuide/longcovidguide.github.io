@@ -1,27 +1,27 @@
-# What is Long COVID?
+# 什么是长新冠？
 
-Long COVID refers to a wide range of health problems that persist for four or more weeks after an acute COVID-19 infection. It can affect people regardless of the severity of their initial illness — including those who had mild or asymptomatic cases.
+长新冠（Long COVID）是指在 COVID-19 急性感染后持续四周或更长时间的一系列广泛健康问题。无论初始病情的严重程度如何，它都可能影响感染者——包括轻症或无症状感染者。
 
-## Key Characteristics
+## 主要特征
 
-- Symptoms last weeks, months, or longer after the initial infection
-- Can affect multiple organ systems simultaneously
-- Symptoms may relapse and remit or fluctuate over time
-- Not explained by an alternative diagnosis
+- 症状在初始感染后持续数周、数月甚至更久
+- 可能同时影响多个器官系统
+- 症状可能反复发作、缓解或随时间波动
+- 无法通过其他替代诊断来解释
 
-## Official Definitions
+## 官方定义
 
-The WHO defines Post COVID-19 condition as occurring "usually 3 months from the onset of COVID-19, with symptoms that last for at least 2 months and cannot be explained by an alternative diagnosis."
+**世界卫生组织 (WHO)** 将“新冠后状况”定义为：通常发生在 COVID-19 发病后的 3 个月内，症状持续至少 2 个月，且无法由其他诊断解释。
 
-The CDC uses the term "Post-COVID Conditions" for the wide range of health consequences present four or more weeks after infection.
+**美国疾病控制与预防中心 (CDC)** 使用“新冠后状况”（Post-COVID Conditions）一词来统称感染四周或更长时间后出现的各种健康后果。
 
-## Possible Mechanisms
+## 可能的发病机制
 
-Researchers are investigating several potential causes, including:
+研究人员正在调查几种潜在病因，包括：
 
-- Viral persistence or viral reservoirs
-- Immune dysregulation and chronic inflammation
-- Microbiome disruption
-- Reactivation of latent viruses (e.g., EBV)
-- Autoantibody formation
-- Microclots and vascular damage
+- 病毒持久性或病毒库
+- 免疫失调和慢性炎症
+- 微生物群失调
+- 潜伏病毒（如 EBV）的重新激活
+- 自身抗体的形成
+- 微血栓和血管损伤

@@ -1,29 +1,29 @@
-# Who is Affected
+# 受影响人群
 
-Long COVID can affect anyone who has had COVID-19, regardless of age, prior health status, or severity of the acute illness.
+长新冠（Long COVID）可能影响任何曾感染过 COVID-19 的人，无论其年龄大小、既往健康状况或急性期病情严重程度如何。
 
-## Prevalence
+## 患病率
 
-- Estimates suggest 10–30% of people who contract COVID-19 develop some form of Long COVID
-- Millions of people globally are affected
-- People who were never hospitalized make up the majority of Long COVID cases
+- 据估计，约有 10–30% 的 COVID-19 感染者会出现某种形式的长新冠。
+- 全球有数百万人受到影响。
+- 未曾住院的感染者占长新冠病例的大多数。
 
-## Risk Factors
+## 风险因素
 
-Research has identified several factors associated with higher risk:
+研究确定了几个与更高风险相关的因素：
 
-- Female sex
-- Older age
-- Having had a more severe acute illness
-- Pre-existing health conditions (e.g., asthma, diabetes)
-- Not being vaccinated against COVID-19
+- 女性
+- 高龄
+- 急性期病情较重
+- 患有基础疾病（如哮喘、糖尿病）
+- 未接种 COVID-19 疫苗
 
-> Vaccination has been shown to reduce (though not eliminate) the risk of developing Long COVID.
+> 研究表明，接种疫苗可以降低（但不能完全消除）患上长新冠的风险。
 
-## Impact on Daily Life
+## 对日常生活的影响
 
-Long COVID can range from mild inconvenience to complete disability. Many people:
+长新冠的影响程度不等，从轻微的不便到完全丧失生活能力。许多患者：
 
-- Are unable to work or have reduced work capacity
-- Experience significant disruption to social and family life
-- Face challenges getting an accurate diagnosis and appropriate care
+- 无法工作或工作能力下降
+- 社交和家庭生活受到严重干扰
+- 在获得准确诊断和适当护理方面面临挑战

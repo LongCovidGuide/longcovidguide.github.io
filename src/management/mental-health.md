@@ -1,28 +1,28 @@
-# Mental Health
+# 心理健康
 
-Living with a chronic, often misunderstood illness takes a significant mental and emotional toll. Addressing mental health is an important part of Long COVID management.
+患有一种往往被误解的慢性疾病，会给心理和情感带来巨大负担。关注心理健康是长新冠（Long COVID）管理中不可或缺的一部分。
 
-## Common Mental Health Challenges
+## 常见的心理健康挑战
 
-- **Depression** — from illness burden, loss of function, and uncertainty
-- **Anxiety** — about symptoms, recovery, and the future
-- **Grief** — for your pre-illness self and lost activities
-- **Medical gaslighting** — being dismissed or disbelieved by healthcare providers
-- **Isolation** — from reduced capacity to socialize
+- **抑郁** —— 源于疾病负担、功能丧失以及对未来的不确定感。
+- **焦虑** —— 担心症状、康复进度以及生活前景。
+- **哀伤** —— 怀念患病前的自己以及那些被迫放弃的活动。
+- **医疗“煤气灯”效应 (Medical Gaslighting)** —— 被医护人员轻视或不信任。
+- **孤独感** —— 由于社交能力受限而产生的隔阂。
 
-## Seeking Support
+## 寻求支持
 
-- Talk to your GP or primary care provider about mental health symptoms
-- Ask for a referral to a therapist or psychologist experienced with chronic illness
-- Peer support groups (online or local) can provide understanding and practical advice
+- 与您的全科医生或首诊医生讨论您的心理健康症状。
+- 请求转诊给在慢性病领域有经验的治疗师或心理学家。
+- 同伴支持小组（在线或当地）可以提供理解和实用的建议。
 
-## Self-Care Strategies
+## 自我照顾策略
 
-- **Validate your experience** — Long COVID is real, even when tests are normal
-- **Set boundaries** — it's okay to decline activities that will cause a crash
-- **Connect with others** — Long COVID communities online can reduce isolation
-- **Celebrate small wins** — recovery is often non-linear
+- **认可自己的经历** —— 即使化验结果正常，长新冠也是真实存在的。
+- **设定界限** —— 拒绝那些可能导致病情崩溃（Crash）的活动是可以接受的。
+- **与他人联系** —— 参与在线长新冠社区可以减轻孤独感。
+- **庆祝每一个微小的胜利** —— 康复过程通常不是线性的，任何进步都值得肯定。
 
-## Note on CBT and Therapy
+## 关于认知行为疗法 (CBT) 的说明
 
-Cognitive Behavioral Therapy (CBT) can help with coping strategies for chronic illness. However, CBT approaches that challenge illness beliefs or push activity levels may not be appropriate for Long COVID. Look for therapists familiar with chronic fatigue conditions.
+认知行为疗法（CBT）可以帮助患者学习应对慢性病的策略。然而，如果 CBT 试图质疑患者的疾病感受或强行提高活动水平，可能并不适合长新冠患者。建议寻找熟悉慢性疲劳病症的治疗师。

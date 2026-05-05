@@ -1,38 +1,38 @@
-# Medical Treatments
+# 医疗方案
 
-There is currently no universally approved treatment for Long COVID. Management is largely symptom-focused. Work with your healthcare provider to build a plan suited to your specific symptoms.
+目前尚无针对长新冠（Long COVID）的通用获批疗法。管理方式主要侧重于症状缓解。请与您的医疗服务提供者合作，根据您的具体症状制定方案。
 
-## Currently Investigated Treatments
+## 正在研究中的疗法
 
-| Symptom Area | Approaches Being Studied |
+| 症状领域 | 正在研究的处理方法 |
 |---|---|
-| Fatigue / PEM | Low-dose naltrexone (LDN), pacing protocols |
-| Dysautonomia / POTS | Beta-blockers, increased salt/fluid intake, compression garments |
-| Brain fog | Cognitive rehabilitation, antihistamines |
-| Sleep | Sleep hygiene, melatonin, CBT-I |
-| Pain | Anti-inflammatories, physical therapy |
-| Depression/Anxiety | SSRIs, therapy |
+| 疲劳 / PEM | 低剂量纳曲酮 (LDN)、节奏调整方案 |
+| 自主神经失调 / POTS | β-受体阻滞剂、增加盐分/液体摄入、压力服 |
+| 脑雾 | 认知康复、抗组胺药物 |
+| 睡眠 | 睡眠卫生、褪黑素、针对失眠的认知行为疗法 (CBT-I) |
+| 疼痛 | 抗炎药、物理治疗 |
+| 抑郁/焦虑 | 选择性 5-羟色胺再摄取抑制剂 (SSRIs)、心理治疗 |
 
-> **Important:** Graded Exercise Therapy (GET) has been shown to worsen outcomes in people with PEM. Discuss any exercise plan carefully with your doctor.
+> **重要提示：** 研究表明，分级运动疗法 (GET) 会加重患有 PEM（劳累后不适）者的病情。在制定任何运动计划前，请务必与医生慎重讨论。
 
-## Specialist Referrals
+## 专科转诊
 
-You may benefit from referrals to:
+您可能会从以下专科转诊中受益：
 
-- Cardiologist (for POTS, chest symptoms)
-- Neurologist (for brain fog, neuropathy, headaches)
-- Pulmonologist (for breathing symptoms)
-- Rheumatologist (for immune/inflammatory issues)
-- Psychiatrist or psychologist (for mental health support)
+- **心内科**（针对 POTS、胸部症状）
+- **神经内科**（针对脑雾、神经病变、头痛）
+- **呼吸科**（针对呼吸症状）
+- **风湿免疫科**（针对免疫/炎症问题）
+- **精神科或心理科**（针对心理健康支持）
 
-## Clinical Trials
+## 临床试验
 
-Active trials are listed at [ClinicalTrials.gov](https://clinicaltrials.gov) — search "Long COVID" or "PASC" for currently enrolling studies.
+活跃的试验列于 [ClinicalTrials.gov](https://clinicaltrials.gov) —— 搜索“Long COVID”或“PASC”即可找到正在招募的研究。
 
-## Documenting Your Symptoms
+## 记录您的症状
 
-Keep records to bring to appointments:
+保留以下记录以便就诊时使用：
 
-- A symptom diary with dates, severity, and triggers
-- List of all medications and supplements
-- Records of previous test results
+- 记录日期、严重程度和诱因的**症状日记**
+- 所有药物和膳食补充剂的清单
+- 既往检查结果记录
