@@ -1,7 +1,7 @@
 [book]
 title = "Long COVID Guide"
 authors = ["znwang25"]
-language = "en"
+language = "ch"
 src = "src"
 
 [build]
