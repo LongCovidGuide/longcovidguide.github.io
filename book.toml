@@ -8,6 +8,6 @@ src = "src"
 build-dir = "book"
 
 [output.html]
-site-url = "/long-covid-guide/"
-git-repository-url = "https://github.com/znwang25/long-covid-guide"
-edit-url-template = "https://github.com/znwang25/long-covid-guide/edit/main/{path}"
+site-url = "/"
+git-repository-url = "https://github.com/LongCovidGuide/longcovidguide.github.io"
+edit-url-template = "https://github.com/LongCovidGuide/longcovidguide.github.io/edit/main/{path}"

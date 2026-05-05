@@ -14,4 +14,4 @@ Use the sidebar to navigate between sections:
 
 ## Contributing
 
-This is an open resource. If you'd like to contribute or suggest improvements, please visit the [GitHub repository](https://github.com/znwang25/long-covid-guide).
+This is an open resource. If you'd like to contribute or suggest improvements, please visit the [GitHub repository](https://github.com/LongCovidGuide/longcovidguide.github.io).
